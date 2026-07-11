@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Ahmad, Full-Stack Software Engineer specializing in high-performance web systems, POS software, cross-platform apps, and computer vision utilities.">
+    <title>Ahmad | Full-Stack Software Engineer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="dark-theme">
+    <!-- Grid Background -->
+    <div class="dot-grid"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-accent">&lt;</span>AHMAD<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#terminal" class="nav-link">Terminal</a></li>
+                    <li><a href="#timeline" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="badge-container">
+                    <span class="status-badge"><span class="pulse-dot"></span> Available for Select Projects</span>
+                </div>
+                <h1 class="hero-title">
+                    Building High-Performance <span class="gradient-text">Systems</span> & Cross-Platform <span class="gradient-text">Apps</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Full-Stack Software Engineer specialized in Laravel ecosystems, desktop/mobile app engineering (Flutter, Expo), and computer vision integrations.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#terminal" class="btn btn-secondary">Run CLI Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Profile Summary -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card glass">
+                        <p class="about-text">
+                            I am a software engineer focused on crafting clean, optimized, and performant solutions. With deep expertise in database query optimization, system architecture, and hardware integrations, I bridge the gap between complex backend architectures and highly responsive client applications.
+                        </p>
+                        <p class="about-text">
+                            My development methodology prioritizes <strong>performance optimization</strong> (eliminating N+1 query overheads, implementing smart caching) and <strong>security hygiene</strong>. Whether building hardware-locked POS systems, scaling auto-part buying databases, or developing webcam-based computer vision utilities, I deliver robust production-grade code.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skills-card glass hover-glow" id="skill-backend">
+                        <div class="card-icon">🧠</div>
+                        <h3>Backend & Systems</h3>
+                        <ul class="skills-list">
+                            <li>PHP 8.2+ & Laravel 12</li>
+                            <li>Node.js & Express</li>
+                            <li>Database Optimization (MySQL, SQLite)</li>
+                            <li>Query Consolidations & Indexing</li>
+                            <li>Caching Systems & Daemon Services</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-card glass hover-glow" id="skill-frontend">
+                        <div class="card-icon">🎨</div>
+                        <h3>Frontend & Hybrid Mobile</h3>
+                        <ul class="skills-list">
+                            <li>Flutter & Dart (Desktop & Mobile)</li>
+                            <li>React Native & Expo</li>
+                            <li>Alpine.js & Tailwind CSS</li>
+                            <li>Blade Components & PWA wrappers</li>
+                            <li>Vite & Modern JS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-card glass hover-glow" id="skill-integrations">
+                        <div class="card-icon">🔌</div>
+                        <h3>Hardware & Integrations</h3>
+                        <ul class="skills-list">
+                            <li>Thermal Receipt Printing</li>
+                            <li>Telegram Bot & API Automation</li>
+                            <li>WhatsApp Web API Integrations</li>
+                            <li>Hardware ID Locking & Anti-Piracy</li>
+                            <li>Instance Lock & Performance Monitors</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-card glass hover-glow" id="skill-ai-vision">
+                        <div class="card-icon">👁️</div>
+                        <h3>AI & Computer Vision</h3>
+                        <ul class="skills-list">
+                            <li>MediaPipe Hand Landmarking</li>
+                            <li>OpenCV Image Processing</li>
+                            <li>Python Scripting & Automation</li>
+                            <li>Human-Computer Interfaces</li>
+                            <li>CLAHE & Bilateral Image Filtering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header-flex">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="filter-container">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="web">Web & Backend</button>
+                        <button class="filter-btn" data-filter="app">Mobile & Desktop</button>
+                        <button class="filter-btn" data-filter="vision">Python & Vision</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1: Usama Auto -->
+                    <div class="project-card glass" data-category="web">
+                        <div class="project-banner web-gradient"></div>
+                        <div class="project-content">
+                            <span class="project-tag">Laravel 12 / Node.js / Expo</span>
+                            <h3>Usama Auto Ecosystem</h3>
+                            <p>An e-commerce platform for auto parts featuring a Laravel 12 backend admin portal, an iOS Expo wrapper app, and a Node.js background messaging daemon using the WhatsApp Web API with rate-limiting protection.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmadallkhayat/ecommerce" target="_blank" rel="noopener" class="project-link">GitHub Repo &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: PFMS -->
+                    <div class="project-card glass" data-category="web">
+                        <div class="project-banner db-gradient"></div>
+                        <div class="project-content">
+                            <span class="project-tag">Laravel 12 / Alpine.js / MySQL</span>
+                            <h3>PFMS (Finance System)</h3>
+                            <p>Personal Finance Management System tracking multi-currency (USD & IQD) deposits, loans, and safe transfers. Highly optimized database schemas, eager loading scopes (reducing N*8 queries to 1), and smart invalidation cache.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmadallkhayat/pfms" target="_blank" rel="noopener" class="project-link">GitHub Repo &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Servex -->
+                    <div class="project-card glass" data-category="app">
+                        <div class="project-banner pos-gradient"></div>
+                        <div class="project-content">
+                            <span class="project-tag">Flutter / Dart / Telegram API</span>
+                            <h3>Servex Restaurant POS</h3>
+                            <p>A desktop/cross-platform POS system for restaurants. Integrates local storage, thermal receipt printing, automated backups, and Telegram-linked anti-piracy hardware-locks to prevent unlicensed folder copies.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmadallkhayat/servex" target="_blank" rel="noopener" class="project-link">GitHub Repo &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: MobiPos -->
+                    <div class="project-card glass" data-category="web">
+                        <div class="project-banner mobile-gradient"></div>
+                        <div class="project-content">
+                            <span class="project-tag">Laravel 12 / Tailwind 4 / Alpine.js</span>
+                            <h3>MobiPos Accessory Store</h3>
+                            <p>Point of Sale and inventory system tailored for mobile accessories shops. Supports barcode scanning, USD-to-IQD purchases, Excel import/export reporting, and an Expo Mobile companion app.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmadallkhayat/mobipos" target="_blank" rel="noopener" class="project-link">GitHub Repo &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: SilkRoute -->
+                    <div class="project-card glass" data-category="web">
+                        <div class="project-banner trip-gradient"></div>
+                        <div class="project-content">
+                            <span class="project-tag">Laravel 12 / Tailwind CSS</span>
+                            <h3>SilkRoute Buying Trips</h3>
+                            <p>China auto parts buying trips management system. Utilizes Breeze auth, Repository Pattern, and a Service Layer to cleanly track shops, invoices, deposits, payments, and currency summaries in CNY.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmadallkhayat/silkroute" target="_blank" rel="noopener" class="project-link">GitHub Repo &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: HandMouse.PY -->
+                    <div class="project-card glass" data-category="vision">
+                        <div class="project-banner vision-gradient"></div>
+                        <div class="project-content">
+                            <span class="project-tag">Python / MediaPipe / OpenCV</span>
+                            <h3>HandMouse.PY Controller</h3>
+                            <p>An innovative human-computer interface tracking hand gestures with OpenCV & MediaPipe. Maps palm landmarks to screen coordinates, supporting left click, double click, right click, scroll, and drag-and-drop actions.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmadallkhayat/handmouse-py" target="_blank" rel="noopener" class="project-link">GitHub Repo &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal Section -->
+        <section id="terminal" class="terminal-section">
+            <div class="container">
+                <h2 class="section-title">Interactive Terminal Demo</h2>
+                <p class="section-subtitle">Query my engineering experience directly. Type <code class="terminal-code-tag">help</code> or <code class="terminal-code-tag">projects</code> to interact.</p>
+                
+                <div class="terminal-window glass">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">guest@ahmad-dev-pc:~</div>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-line">Ahmad Dev Environment [Version 2026.07]</div>
+                        <div class="terminal-line">Initializing shell... Connection established.</div>
+                        <div class="terminal-line">Type <span class="highlight-green">help</span> to view available commands.</div>
+                        <br>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="terminal-prompt">guest@ahmad-dev-pc:~$</span>
+                        <input type="text" id="terminal-input" autocomplete="off" autofocus aria-label="Terminal Input">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Core Engineering Principles</h2>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content glass">
+                            <h3>Query Consolidation & N+1 Resolution</h3>
+                            <p>Eager loading of multi-layer relations and subquery scopes to prevent database bottlenecks. Successfully optimized project lists by loading balances inside a single DB subselect instead of multiple dynamic loops.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content glass">
+                            <h3>Robust Service Layer Separation</h3>
+                            <p>Creating clean boundaries between business logic and the presentation layer. Deploying Repository Patterns to manage complex transactions (like currency exchange rates and ledger entries) predictably.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content glass">
+                            <h3>Reliable External Integrations</h3>
+                            <p>Integrating hardware (ESC/POS thermal printers) and unofficial APIs (WhatsApp, Telegram) responsibly. Protecting communication daemons with strict thread-safe queues and rate limiters to avoid API blocks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-text">
+                    Have a project in mind, need database performance consulting, or want to discuss full-stack hybrid app architecture? Let's connect.
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:ahmadsadiqkhayat@gmail.com" class="contact-card glass hover-glow">
+                        <span class="contact-icon">📧</span>
+                        <h4>Email</h4>
+                        <p class="contact-detail">ahmadsadiqkhayat@gmail.com</p>
+                    </a>
+                    <a href="https://github.com/ahmadallkhayat" target="_blank" rel="noopener" class="contact-card glass hover-glow">
+                        <span class="contact-icon">🐙</span>
+                        <h4>GitHub</h4>
+                        <p class="contact-detail">github.com/ahmadallkhayat</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Ahmad. Built with vanilla HTML/CSS/JS. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>
