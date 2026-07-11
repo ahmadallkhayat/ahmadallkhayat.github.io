@@ -290,6 +290,31 @@ a {
     gap: var(--space-6);
 }
 
+.hero-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, hsl(var(--accent-primary)), hsl(var(--accent-secondary)));
+    box-shadow: 0 0 40px hsl(var(--accent-primary-glow)), 0 8px 24px hsl(var(--bg-base) / 0.6);
+    transition: var(--transition-smooth);
+}
+
+.hero-avatar:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 60px hsl(var(--accent-primary) / 0.35), 0 12px 32px hsl(var(--bg-base) / 0.7);
+}
+
+.hero-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    border: 3px solid hsl(var(--bg-base));
+}
+
 .status-badge {
     display: inline-flex;
     align-items: center;
@@ -892,7 +917,12 @@ a {
     .hero-title {
         font-size: var(--font-size-3xl);
     }
-    
+
+    .hero-avatar {
+        width: 140px;
+        height: 140px;
+    }
+
     .hero-cta {
         flex-direction: column;
         width: 100%;
