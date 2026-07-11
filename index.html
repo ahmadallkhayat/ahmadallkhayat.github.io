@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of Ahmad, Full-Stack Software Engineer specializing in high-performance web systems, POS software, cross-platform apps, and computer vision utilities.">
-    <title>Ahmad | Full-Stack Software Engineer Portfolio</title>
-    
+    <meta name="description" content="Portfolio of Ahmad Salahaddin — Software Developer, IT Engineer & Cross-Platform App Developer with 5+ years building iOS, Android & Web apps with Flutter/Dart, backed by Laravel/Node systems, Python automation, and full IT infrastructure management.">
+    <title>Ahmad Salahaddin | Software Developer &amp; Cross-Platform App Developer</title>
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ahmad Salahaddin | Software Developer &amp; Cross-Platform App Developer">
+    <meta property="og:description" content="5+ years building cross-platform apps (Flutter/Dart) and full-stack systems, plus IT infrastructure engineering. Based in Erbil, Iraq.">
+    <meta property="og:image" content="https://ahmadallkhayat.github.io/portfolio/assets/ahmad.jpg">
+    <meta property="og:url" content="https://ahmadallkhayat.github.io/portfolio/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ahmad Salahaddin | Software Developer &amp; Cross-Platform App Developer">
+    <meta name="twitter:description" content="5+ years building cross-platform apps (Flutter/Dart) and full-stack systems, plus IT infrastructure engineering.">
+    <meta name="twitter:image" content="https://ahmadallkhayat.github.io/portfolio/assets/ahmad.jpg">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="index.css?v=2">
+    <link rel="stylesheet" href="index.css?v=3">
 </head>
 <body class="dark-theme">
     <!-- Grid Background -->
@@ -29,8 +40,9 @@
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#terminal" class="nav-link">Terminal</a></li>
                     <li><a href="#timeline" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#terminal" class="nav-link">Terminal</a></li>
                     <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
                 </ul>
             </nav>
@@ -49,13 +61,14 @@
                     <span class="status-badge"><span class="pulse-dot"></span> Available for Select Projects</span>
                 </div>
                 <h1 class="hero-title">
-                    Building High-Performance <span class="gradient-text">Systems</span> & Cross-Platform <span class="gradient-text">Apps</span>
+                    Building Cross-Platform <span class="gradient-text">Apps</span> & Full-Stack <span class="gradient-text">Systems</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Full-Stack Software Engineer specialized in Laravel ecosystems, desktop/mobile app engineering (Flutter, Expo), and computer vision integrations.
+                    Software Developer, IT Engineer &amp; Cross-Platform App Developer with 5+ years shipping iOS, Android &amp; Web apps in Flutter/Dart — backed by Laravel/Node systems, Python automation, and hands-on IT infrastructure. Based in Erbil, Iraq.
                 </p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="assets/Ahmad-Salahaddin-Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
                     <a href="#terminal" class="btn btn-secondary">Run CLI Demo</a>
                 </div>
             </div>
@@ -68,10 +81,13 @@
                 <div class="about-grid">
                     <div class="about-card glass">
                         <p class="about-text">
-                            I am a software engineer focused on crafting clean, optimized, and performant solutions. With deep expertise in database query optimization, system architecture, and hardware integrations, I bridge the gap between complex backend architectures and highly responsive client applications.
+                            I'm a Software Developer and IT Engineer with <strong>5+ years</strong> building and deploying cross-platform applications across the construction, retail, and hospitality sectors. My core strength is shipping production <strong>Flutter/Dart</strong> apps for iOS, Android, and Web that serve real customers and run real business operations end to end.
                         </p>
                         <p class="about-text">
-                            My development methodology prioritizes <strong>performance optimization</strong> (eliminating N+1 query overheads, implementing smart caching) and <strong>security hygiene</strong>. Whether building hardware-locked POS systems, scaling auto-part buying databases, or developing webcam-based computer vision utilities, I deliver robust production-grade code.
+                            Around those apps I build the full stack that makes them work: <strong>Laravel</strong> admin portals, <strong>Node.js</strong> messaging daemons, and <strong>Python</strong> automation, with a strong focus on database optimization, caching, and hardware integrations (thermal printing, licensing locks). Having also managed complete IT infrastructure, I bridge the gap between clean backend architecture, responsive client apps, and the systems they run on.
+                        </p>
+                        <p class="about-text">
+                            I hold a <strong>B.Sc. in Computer Engineering</strong> (Lebanese French University, 2026), building on a strong practical foundation in software development and IT systems.
                         </p>
                     </div>
                 </div>
@@ -83,31 +99,31 @@
             <div class="container">
                 <h2 class="section-title">Technical Expertise</h2>
                 <div class="skills-grid">
+                    <div class="skills-card glass hover-glow" id="skill-apps">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(var(--accent-primary))"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        </div>
+                        <h3>Cross-Platform Apps</h3>
+                        <ul class="skills-list">
+                            <li>Flutter & Dart (iOS, Android, Web)</li>
+                            <li>Windows & macOS Desktop Builds</li>
+                            <li>REST API Integration</li>
+                            <li>Firebase & Offline-First (SQLite)</li>
+                            <li>State Management & PWA Wrappers</li>
+                        </ul>
+                    </div>
+
                     <div class="skills-card glass hover-glow" id="skill-backend">
                         <div class="card-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(var(--accent-primary))"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
                         </div>
                         <h3>Backend & Systems</h3>
                         <ul class="skills-list">
-                            <li>PHP 8.2+ & Laravel 12</li>
-                            <li>Node.js & Express</li>
-                            <li>Database Optimization (MySQL, SQLite)</li>
-                            <li>Query Consolidations & Indexing</li>
-                            <li>Caching Systems & Daemon Services</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills-card glass hover-glow" id="skill-frontend">
-                        <div class="card-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(var(--accent-primary))"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        </div>
-                        <h3>Frontend & Hybrid Mobile</h3>
-                        <ul class="skills-list">
-                            <li>Flutter & Dart (Desktop & Mobile)</li>
-                            <li>React Native & Expo</li>
-                            <li>Alpine.js & Tailwind CSS</li>
-                            <li>Blade Components & PWA wrappers</li>
-                            <li>Vite & Modern JS</li>
+                            <li>PHP & Laravel</li>
+                            <li>Node.js Daemons & JavaScript</li>
+                            <li>SQL Server, MySQL & SQLite</li>
+                            <li>Query Optimization & Indexing</li>
+                            <li>Caching & Background Services</li>
                         </ul>
                     </div>
 
@@ -125,15 +141,29 @@
                         </ul>
                     </div>
 
+                    <div class="skills-card glass hover-glow" id="skill-it">
+                        <div class="card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(var(--accent-primary))"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line><path d="M18 6h-6"></path><path d="M18 18h-6"></path></svg>
+                        </div>
+                        <h3>IT & Networking</h3>
+                        <ul class="skills-list">
+                            <li>Network Setup & Maintenance</li>
+                            <li>Server Configuration</li>
+                            <li>Hardware Troubleshooting</li>
+                            <li>System Debugging & Optimization</li>
+                            <li>Git, Bash & Tooling</li>
+                        </ul>
+                    </div>
+
                     <div class="skills-card glass hover-glow" id="skill-ai-vision">
                         <div class="card-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(var(--accent-primary))"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                         </div>
                         <h3>AI & Computer Vision</h3>
                         <ul class="skills-list">
+                            <li>Python Scripting & Automation</li>
                             <li>MediaPipe Hand Landmarking</li>
                             <li>OpenCV Image Processing</li>
-                            <li>Python Scripting & Automation</li>
                             <li>Human-Computer Interfaces</li>
                             <li>CLAHE & Bilateral Image Filtering</li>
                         </ul>
@@ -157,12 +187,25 @@
 
                 <div class="projects-grid" id="projects-grid">
                     <!-- Project 1: Usama Auto -->
-                    <div class="project-card glass" data-category="web">
+                    <div class="project-card glass" data-category="app">
                         <div class="project-banner web-gradient"></div>
                         <div class="project-content">
-                            <span class="project-tag">Laravel 12 / Node.js / Expo</span>
+                            <span class="project-tag">Flutter / Dart / Laravel / Node.js</span>
                             <h3>Usama Auto Ecosystem</h3>
-                            <p>An e-commerce platform for auto parts featuring a Laravel 12 backend admin portal, an iOS Expo wrapper app, and a Node.js background messaging daemon using the WhatsApp Web API with rate-limiting protection.</p>
+                            <p>A full e-commerce platform for wholesale car accessories — live and actively used by real customers. Flutter/Dart apps for iOS, Android &amp; Web, backed by a Laravel admin portal and a Node.js WhatsApp Web daemon with rate-limiting. Cut manual order processing time by ~60%.</p>
+                            <div class="project-links">
+                                <span class="project-link-disabled">Private Repository</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: RTR CTMS -->
+                    <div class="project-card glass" data-category="app">
+                        <div class="project-banner trip-gradient"></div>
+                        <div class="project-content">
+                            <span class="project-tag">Flutter / Dart / SQL</span>
+                            <h3>RTR CTMS (Client Tracking)</h3>
+                            <p>A fully custom CRM and billing platform built for a construction office. Automates invoice generation, client records, and project financial tracking — replacing paper-based workflows and significantly reducing billing errors and retrieval time.</p>
                             <div class="project-links">
                                 <span class="project-link-disabled">Private Repository</span>
                             </div>
@@ -186,9 +229,9 @@
                     <div class="project-card glass" data-category="app">
                         <div class="project-banner pos-gradient"></div>
                         <div class="project-content">
-                            <span class="project-tag">Flutter / Dart / Telegram API</span>
+                            <span class="project-tag">Flutter / Dart / SQLite / Telegram API</span>
                             <h3>Servex Restaurant POS</h3>
-                            <p>A desktop/cross-platform POS system for restaurants. Integrates local storage, thermal receipt printing, automated backups, and Telegram-linked anti-piracy hardware-locks to prevent unlicensed folder copies.</p>
+                            <p>A fully offline, cross-platform POS system for coffee shops and restaurants — no internet dependency. Local SQLite storage, thermal receipt printing, automated backups, and Telegram-linked anti-piracy hardware-locks to prevent unlicensed folder copies.</p>
                             <div class="project-links">
                                 <span class="project-link-disabled">Private Repository</span>
                             </div>
@@ -269,25 +312,72 @@
         <!-- Experience Timeline Section -->
         <section id="timeline" class="timeline-section">
             <div class="container">
-                <h2 class="section-title">Core Engineering Principles</h2>
+                <h2 class="section-title">Work Experience</h2>
                 <div class="timeline">
                     <div class="timeline-item left">
                         <div class="timeline-content glass">
-                            <h3>Query Consolidation & N+1 Resolution</h3>
-                            <p>Eager loading of multi-layer relations and subquery scopes to prevent database bottlenecks. Successfully optimized project lists by loading balances inside a single DB subselect instead of multiple dynamic loops.</p>
+                            <span class="timeline-period">2022 – Present</span>
+                            <h3>Software Developer</h3>
+                            <span class="timeline-company">Usama Auto — Wholesale Car Accessories</span>
+                            <p>Independently designed and developed a full-featured e-commerce platform (iOS, Android &amp; Web) in Flutter/Dart, serving real customers and driving sales operations entirely through the app. Architected a scalable product catalog, order management system, and customer-facing UI — reducing manual order processing time by an estimated 60%.</p>
                         </div>
                     </div>
                     <div class="timeline-item right">
                         <div class="timeline-content glass">
-                            <h3>Robust Service Layer Separation</h3>
-                            <p>Creating clean boundaries between business logic and the presentation layer. Deploying Repository Patterns to manage complex transactions (like currency exchange rates and ledger entries) predictably.</p>
+                            <span class="timeline-period">2018 – 2022</span>
+                            <h3>IT Manager &amp; Software Developer</h3>
+                            <span class="timeline-company">Rast To Rast Construction Office</span>
+                            <p>Held a dual role managing the full IT infrastructure while developing a custom Client Tracking &amp; Management System (RTR CTMS) for invoices, billing, and project documentation. Built and deployed internal software that replaced paper-based workflows, significantly reducing billing errors and improving document retrieval speed.</p>
                         </div>
                     </div>
                     <div class="timeline-item left">
                         <div class="timeline-content glass">
-                            <h3>Reliable External Integrations</h3>
-                            <p>Integrating hardware (ESC/POS thermal printers) and unofficial APIs (WhatsApp, Telegram) responsibly. Protecting communication daemons with strict thread-safe queues and rate limiters to avoid API blocks.</p>
+                            <span class="timeline-period">2021 – Present</span>
+                            <h3>Technical Support Specialist</h3>
+                            <span class="timeline-company">Aqua Pool</span>
+                            <p>Provide ongoing hardware and software troubleshooting, ensuring minimal downtime across operational systems.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Languages Section -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education &amp; Languages</h2>
+                <div class="education-grid">
+                    <div class="edu-card glass hover-glow">
+                        <span class="edu-period">2022 – 2026</span>
+                        <h3>B.Sc. Computer Engineering</h3>
+                        <span class="edu-org">Lebanese French University — Erbil</span>
+                        <p>Graduated with a B.Sc. in Computer Engineering, building on a strong practical foundation in software development and IT systems.</p>
+                    </div>
+                    <div class="edu-card glass hover-glow">
+                        <span class="edu-period">2017 – 2022</span>
+                        <h3>Diploma — Information Technology (CIS)</h3>
+                        <span class="edu-org">CIS College — Erbil</span>
+                        <p>Comprehensive IT diploma covering networking, systems administration, software fundamentals, and technical support.</p>
+                    </div>
+                </div>
+
+                <h3 class="languages-title">Languages</h3>
+                <div class="languages-grid">
+                    <div class="lang-card glass">
+                        <span class="lang-name">Kurdish</span>
+                        <span class="lang-level">Native</span>
+                    </div>
+                    <div class="lang-card glass">
+                        <span class="lang-name">English</span>
+                        <span class="lang-level">Advanced — Professional Working Proficiency</span>
+                    </div>
+                    <div class="lang-card glass">
+                        <span class="lang-name">Arabic</span>
+                        <span class="lang-level">Advanced — Professional Working Proficiency</span>
+                    </div>
+                    <div class="lang-card glass">
+                        <span class="lang-name">Turkish</span>
+                        <span class="lang-level">Basic — Conversational</span>
                     </div>
                 </div>
             </div>
@@ -298,7 +388,7 @@
             <div class="container contact-container">
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="contact-text">
-                    Have a project in mind, need database performance consulting, or want to discuss full-stack hybrid app architecture? Let's connect.
+                    Have a project in mind — a cross-platform app, a full-stack system, or IT infrastructure work? I'm based in Erbil, Iraq and available for select projects. Let's connect.
                 </p>
                 <div class="contact-methods">
                     <a href="mailto:ahmadsadiqkhayat@gmail.com" class="contact-card glass hover-glow">
@@ -307,6 +397,20 @@
                         </span>
                         <h4>Email</h4>
                         <p class="contact-detail">ahmadsadiqkhayat@gmail.com</p>
+                    </a>
+                    <a href="tel:+9647510292797" class="contact-card glass hover-glow">
+                        <span class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(var(--accent-primary))"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </span>
+                        <h4>Phone</h4>
+                        <p class="contact-detail">+964 751 029 2797</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmad-salahaddin-531495288" target="_blank" rel="noopener" class="contact-card glass hover-glow">
+                        <span class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: hsl(var(--accent-primary))"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </span>
+                        <h4>LinkedIn</h4>
+                        <p class="contact-detail">ahmad-salahaddin</p>
                     </a>
                     <a href="https://github.com/ahmadallkhayat" target="_blank" rel="noopener" class="contact-card glass hover-glow">
                         <span class="contact-icon">
@@ -323,11 +427,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
-            <p>&copy; 2026 Ahmad. Built with vanilla HTML/CSS/JS. Hosted on GitHub Pages.</p>
+            <p>&copy; 2026 Ahmad Salahaddin. Built with vanilla HTML/CSS/JS. Hosted on GitHub Pages.</p>
         </div>
     </footer>
 
     <!-- Custom JS -->
-    <script src="index.js?v=2"></script>
+    <script src="index.js?v=3"></script>
 </body>
 </html>
