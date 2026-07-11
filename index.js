@@ -388,8 +388,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- Back to top ----
     const toTop = document.getElementById('back-to-top');
     if (toTop) {
+        const heroEl = document.getElementById('hero');
         window.addEventListener('scroll', () => {
-            toTop.classList.toggle('show', window.scrollY > 600);
+            // Only show once the hero (and its stats) is scrolled out of view,
+            // so the floating button never overlaps hero content.
+            const trigger = heroEl ? heroEl.offsetHeight - 100 : 600;
+            toTop.classList.toggle('show', window.scrollY > trigger);
         }, { passive: true });
         toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' }));
     }
